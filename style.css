@@ -54,9 +54,11 @@ header {
     filter: drop-shadow(2px 4px 6px #B48A4E);
 }
 
-.main_headline {
+h1 {
     margin: 0;
     font-size: 84px;
+    font-family: 'Viga', sans-serif;
+    font-weight: 100;
 }
 
 .button {
@@ -138,7 +140,57 @@ header {
 
 .video_section {
     background-image: url('./img/bottom.png');
+    /*background: url('')*/
     height: 600px;
     background-size: cover;
     background-position: center;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    padding: 80px 80px;
+}
+
+.half_width {
+    width: 50%;
+}
+
+.footer_icons {
+    width: 32px;
+}
+
+.footer_left {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 16px;
+}
+
+.footer_center {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 42px;
+    flex-grow: 1;
+    /*flex: 1*/
+}
+
+input::placeholder {
+    color: gray;
+    padding-left: 16px;
+}
+
+.button_footer {
+    width: 200px;
+    border-width: 0;
+}
+
+.footer_form {
+    display: flex;
 }
