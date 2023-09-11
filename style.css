@@ -29,7 +29,7 @@ header {
 
 .logo {
     
-    width: 160px;
+    width: 100px;
 }
 
 .menu_link {
@@ -59,6 +59,7 @@ h1 {
     font-size: 84px;
     font-family: 'Viga', sans-serif;
     font-weight: 100;
+    text-align: center;
 }
 
 .button {
@@ -76,6 +77,7 @@ h1 {
     background-color: black;
     padding: 80px 80px;
     display: flex;
+    gap: 16px;
     justify-content: space-around;
 }
 
@@ -87,11 +89,14 @@ h1 {
     font-size: 18px;
     font-weight: 700;
     gap: 8px;
+    /* width: 30%; */
+    flex: 1; /* to be discussed with */
 }
 
 .quicklinks img {
-    height: 200px;
-    width: 200px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
 }
 
 .festival_section {
@@ -193,4 +198,15 @@ input::placeholder {
 
 .footer_form {
     display: flex;
+}
+
+@media (max-width: 700px) {
+.hide_mobile {
+    display: none;
+}
+
+h1 {
+    font-size: 56px;
+}
+
 }
