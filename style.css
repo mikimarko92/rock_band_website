@@ -200,6 +200,7 @@ input::placeholder {
     display: flex;
 }
 
+/*media queries*/
 @media (max-width: 700px) {
 .hide_mobile {
     display: none;
@@ -208,5 +209,17 @@ input::placeholder {
 h1 {
     font-size: 56px;
 }
+}
 
+@media (max-width: 600px) {
+    .section_quicklinks {
+    flex-direction: column;
+    gap: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .festival_section {
+    flex-direction: column;
+    }
 }
